@@ -3,7 +3,7 @@ version: '3.8'
 services:
   # Web Analytics Dashboard
   analytics-dashboard:
-    build: .
+    image: git.astralelite.org/ae/ytbot:analytics
     container_name: ytbot-analytics-dashboard
     environment:
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
